@@ -1,0 +1,19 @@
+object MainForm: TMainForm
+  Left = 264
+  Height = 561
+  Top = 127
+  Width = 820
+  Caption = 'COVID-2019'
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnResize = FormResize
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object GameTimer: TTimer
+    Interval = 50
+    OnTimer = GameTimerTimer
+    left = 552
+    top = 320
+  end
+end

@@ -1,0 +1,117 @@
+object SettingsForm: TSettingsForm
+  Left = 319
+  Height = 501
+  Top = 96
+  Width = 613
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Выбор сложности'
+  ClientHeight = 501
+  ClientWidth = 613
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object tbCount: TTrackBar
+    Left = 16
+    Height = 38
+    Top = 48
+    Width = 584
+    Max = 500
+    Min = 5
+    Position = 50
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 17
+    Top = 20
+    Width = 138
+    Caption = 'Количество людей:'
+    ParentColor = False
+  end
+  object tbSick: TTrackBar
+    Left = 16
+    Height = 38
+    Top = 132
+    Width = 584
+    Max = 50
+    Min = 1
+    Position = 2
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 17
+    Top = 104
+    Width = 217
+    Caption = 'Количество инфицированных:'
+    ParentColor = False
+  end
+  object tbTimeSick: TTrackBar
+    Left = 16
+    Height = 38
+    Top = 220
+    Width = 584
+    Max = 1000
+    Min = 1
+    Position = 200
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 2
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 17
+    Top = 192
+    Width = 168
+    Caption = 'Длительность болезни:'
+    ParentColor = False
+  end
+  object tbTimeRecovered: TTrackBar
+    Left = 16
+    Height = 38
+    Top = 316
+    Width = 584
+    Max = 1000
+    Min = 1
+    Position = 100
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 3
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 17
+    Top = 288
+    Width = 197
+    Caption = 'Длительность иммунитета:'
+    ParentColor = False
+  end
+  object bGo: TButton
+    Left = 248
+    Height = 40
+    Top = 456
+    Width = 115
+    Caption = 'Поехали!'
+    OnClick = bGoClick
+    TabOrder = 4
+  end
+  object Label5: TLabel
+    Left = 31
+    Height = 17
+    Top = 376
+    Width = 176
+    Caption = 'Время выживания (мин):'
+    ParentColor = False
+  end
+  object tbTimeStayAlive: TTrackBar
+    Left = 16
+    Height = 38
+    Top = 404
+    Width = 584
+    Max = 60
+    Min = 1
+    Position = 3
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 5
+  end
+end
